@@ -22,11 +22,11 @@ internal class Share(
     private val manager: ShareSuccessManager
 ) {
     private val providerAuthority: String by lazy {
-        getContext().packageName + ".flutter.share_provider"
+        getContext().packageName + ".provider"
     }
 
     private val shareCacheFolder: File
-        get() = File(getContext().cacheDir, "share_plus")
+        get() = File(getContext().cacheDir)
 
     /**
      * Setting mutability flags as API v31+ requires.
