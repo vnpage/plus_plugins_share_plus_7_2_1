@@ -26,7 +26,7 @@ internal class Share(
     }
 
     private val shareCacheFolder: File
-        get() = File(getContext().cacheDir)
+        get() = getContext().cacheDir
 
     /**
      * Setting mutability flags as API v31+ requires.
