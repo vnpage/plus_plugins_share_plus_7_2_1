@@ -4,7 +4,7 @@
       <!-- Declares a provider which allows us to store files to share in
            '.../caches/share_plus' and grant the receiving action access -->
       <provider
-        android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+        android:name="androidx.core.content.FileProvider"
         android:authorities="${applicationId}.flutter.share_provider"
         android:exported="false"
         android:grantUriPermissions="true">
