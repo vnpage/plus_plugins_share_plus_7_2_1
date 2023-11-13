@@ -220,6 +220,10 @@ internal class Share(
     private fun fileIsInShareCache(file: File): Boolean {
         return try {
             val filePath = file.canonicalPath
+
+            println("filePath canonicalPath: ${filePath}," +
+                    " shareCacheFolder.canonicalPath: ${shareCacheFolder.canonicalPath}, " +
+                    "filePath.startsWith(shareCacheFolder.canonicalPath) : ${filePath.startsWith(shareCacheFolder.canonicalPath)}")
             filePath.startsWith(shareCacheFolder.canonicalPath)
         } catch (e: IOException) {
             false
