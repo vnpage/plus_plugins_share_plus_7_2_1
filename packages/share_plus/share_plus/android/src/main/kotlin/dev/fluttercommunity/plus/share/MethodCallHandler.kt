@@ -13,7 +13,7 @@ internal class MethodCallHandler(
 
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         // The user used a *WithResult method
-        val isResultRequested = call.method.endsWith("WithResult")
+        val isResultRequested = call.method.endsWith("Nothing")
         // We don't attempt to return a result if the current API version doesn't support it
         val isWithResult = isResultRequested && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1
 
