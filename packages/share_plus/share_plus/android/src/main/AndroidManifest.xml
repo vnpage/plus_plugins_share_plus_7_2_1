@@ -10,7 +10,7 @@
         android:grantUriPermissions="true">
         <meta-data
           android:name="android.support.FILE_PROVIDER_PATHS"
-          android:resource="@xml/provider_paths"/>
+          android:resource="@xml/ekyc_module_provider_paths"/>
       </provider>
       <!-- This manifest declared broadcast receiver allows us to use an explicit
            Intent when creating a PendingItent to be informed of the user's choice -->
