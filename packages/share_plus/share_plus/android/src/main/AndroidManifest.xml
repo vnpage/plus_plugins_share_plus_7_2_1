@@ -3,7 +3,7 @@
     <application>
       <!-- Declares a provider which allows us to store files to share in
            '.../caches/share_plus' and grant the receiving action access -->
-      <provider
+      <!-- <provider
         android:name="androidx.core.content.FileProvider"
         android:authorities="${applicationId}.provider"
         android:exported="false"
@@ -12,7 +12,7 @@
           android:name="android.support.FILE_PROVIDER_PATHS"
           android:resource="@xml/ekyc_module_provider_paths"/>
       </provider>
-      <!-- This manifest declared broadcast receiver allows us to use an explicit
+      This manifest declared broadcast receiver allows us to use an explicit
            Intent when creating a PendingItent to be informed of the user's choice -->
       <receiver android:name=".SharePlusPendingIntent" android:exported="false">
         <intent-filter>
